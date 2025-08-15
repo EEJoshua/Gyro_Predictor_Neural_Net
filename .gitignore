@@ -1,0 +1,9 @@
+gyro_predictor/training/__pycache__/
+gyro_predictor/__pycache__/
+epsilon_104Hz_unused/
+gyro_predictor/data/__pycache__/
+gyro_predictor/viz/__pycache__/
+gyro_predictor/models/__pycache__/
+gyro_predictor/utils/__pycache__/
+gyro_predictor/train/__pycache__/
+gyro_predictor/classic/__pycache__/

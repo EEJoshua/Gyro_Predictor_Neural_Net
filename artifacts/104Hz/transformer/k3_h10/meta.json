@@ -1,0 +1,7 @@
+{
+  "in_ch": 6,
+  "history": 10,
+  "k": 3,
+  "arch": "transformer",
+  "hz": 104
+}

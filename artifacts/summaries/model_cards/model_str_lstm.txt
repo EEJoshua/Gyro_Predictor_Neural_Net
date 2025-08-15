@@ -1,0 +1,4 @@
+TimeLSTM(
+  (lstm): LSTM(6, 128, num_layers=2, batch_first=True)
+  (head): Linear(in_features=128, out_features=3, bias=True)
+)

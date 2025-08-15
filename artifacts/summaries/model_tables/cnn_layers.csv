@@ -1,0 +1,14 @@
+idx,path,name,type,out_shape,B,C,T,kernel,stride,activation,params,trainable,notes
+1,net.0,0,Conv1d,1x64x12,1,64,12,3,1,,1216,True,
+2,net.1,1,GELU,1x64x12,1,64,12,-,-,GELU,0,False,
+3,net.2,2,BatchNorm1d,1x64x12,1,64,12,-,-,,128,True,
+4,net.3,3,Conv1d,1x64x12,1,64,12,3,1,,12352,True,
+5,net.4,4,GELU,1x64x12,1,64,12,-,-,GELU,0,False,
+6,net.5,5,BatchNorm1d,1x64x12,1,64,12,-,-,,128,True,
+7,net.6,6,Conv1d,1x64x12,1,64,12,3,1,,12352,True,
+8,net.7,7,GELU,1x64x12,1,64,12,-,-,GELU,0,False,
+9,net.8,8,BatchNorm1d,1x64x12,1,64,12,-,-,,128,True,
+10,head.0,0,AdaptiveAvgPool1d,1x64x1,1,64,1,-,-,,0,False,
+11,head.1,1,Flatten,1x64,1,64,,-,-,,0,False,
+12,head.2,2,Linear,1x3,1,3,,-,-,,195,True,"in=64, out=3"
+(total),,,,,,,,-,-,,26499,True,

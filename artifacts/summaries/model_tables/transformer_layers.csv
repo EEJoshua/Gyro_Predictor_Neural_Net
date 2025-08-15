@@ -1,0 +1,19 @@
+idx,path,name,type,out_shape,B,C,T,kernel,stride,activation,params,trainable,notes
+1,proj,proj,Linear,1x12x128,1,12,128,-,-,,896,True,"in=6, out=128"
+2,pos,pos,PositionalEncoding,1x12x128,1,12,128,-,-,,0,False,
+3,encoder.layers.0.dropout1,dropout1,Dropout,1x12x128,1,12,128,-,-,,0,False,
+4,encoder.layers.0.norm1,norm1,LayerNorm,1x12x128,1,12,128,-,-,,256,True,
+5,encoder.layers.0.linear1,linear1,Linear,1x12x256,1,12,256,-,-,,33024,True,"in=128, out=256"
+6,encoder.layers.0.dropout,dropout,Dropout,1x12x256,1,12,256,-,-,,0,False,
+7,encoder.layers.0.linear2,linear2,Linear,1x12x128,1,12,128,-,-,,32896,True,"in=256, out=128"
+8,encoder.layers.0.dropout2,dropout2,Dropout,1x12x128,1,12,128,-,-,,0,False,
+9,encoder.layers.0.norm2,norm2,LayerNorm,1x12x128,1,12,128,-,-,,256,True,
+10,encoder.layers.1.dropout1,dropout1,Dropout,1x12x128,1,12,128,-,-,,0,False,
+11,encoder.layers.1.norm1,norm1,LayerNorm,1x12x128,1,12,128,-,-,,256,True,
+12,encoder.layers.1.linear1,linear1,Linear,1x12x256,1,12,256,-,-,,33024,True,"in=128, out=256"
+13,encoder.layers.1.dropout,dropout,Dropout,1x12x256,1,12,256,-,-,,0,False,
+14,encoder.layers.1.linear2,linear2,Linear,1x12x128,1,12,128,-,-,,32896,True,"in=256, out=128"
+15,encoder.layers.1.dropout2,dropout2,Dropout,1x12x128,1,12,128,-,-,,0,False,
+16,encoder.layers.1.norm2,norm2,LayerNorm,1x12x128,1,12,128,-,-,,256,True,
+17,head,head,Linear,1x3,1,3,,-,-,,387,True,"in=128, out=3"
+(total),,,,,,,,-,-,,134147,True,

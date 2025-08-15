@@ -1,0 +1,14 @@
+name,type,out_shape,params,trainable
+net.0,Conv1d,"(1, 64, 12)",1216,True
+net.1,GELU,"(1, 64, 12)",0,False
+net.2,BatchNorm1d,"(1, 64, 12)",128,True
+net.3,Conv1d,"(1, 64, 12)",12352,True
+net.4,GELU,"(1, 64, 12)",0,False
+net.5,BatchNorm1d,"(1, 64, 12)",128,True
+net.6,Conv1d,"(1, 64, 12)",12352,True
+net.7,GELU,"(1, 64, 12)",0,False
+net.8,BatchNorm1d,"(1, 64, 12)",128,True
+head.0,AdaptiveAvgPool1d,"(1, 64, 1)",0,False
+head.1,Flatten,"(1, 64)",0,False
+head.2,Linear,"(1, 3)",195,True
+(total),,,26499,True

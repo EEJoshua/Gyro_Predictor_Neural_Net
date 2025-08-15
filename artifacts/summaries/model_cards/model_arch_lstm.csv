@@ -1,0 +1,4 @@
+name,type,out_shape,params,trainable
+lstm,LSTM,"(1, 12, 128)",201728,True
+head,Linear,"(1, 3)",387,True
+(total),,,202115,True
